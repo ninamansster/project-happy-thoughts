@@ -1,0 +1,39 @@
+article {
+  display: flex;
+  flex-direction: column;
+  width:415px;
+  border: solid 0.5px black;
+  background-color: #F2F0F0;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.9);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.9);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.9);
+}
+
+.heartTimer{
+  display:flex;
+  display:row;
+  justify-content: space-between;
+  align-items:center;
+  padding: 10px;
+}
+
+.heartButton {
+  background-color:#FFADAD;
+  border-radius: 50%;
+  padding:11px 13px;
+  font-size: 18px;
+}
+
+h1 {
+  font-size:18px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: grey;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 5px;
+}
