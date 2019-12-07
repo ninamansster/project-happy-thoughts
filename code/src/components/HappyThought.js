@@ -24,7 +24,7 @@ export const HappyThought = (props) => {
           onClick={handleLikeThought}>
           <span role="img" aria-label="Heart">❤️</span>
         </button>
-        <span>{hearts}</span>
+        <span> x {hearts}</span>
         <p>{moment(createdAt).fromNow()}</p>
       </div>
     </article>

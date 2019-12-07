@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { HappyThought } from './components/HappyThought.js'
 import { HappyForm } from './components/HappyForm.js'
+import './app.css'
 
 
 export const App = () => {
@@ -35,12 +36,18 @@ export const App = () => {
 
   return (
     <div>
-      <HappyForm onFormSubmit={handleFormSubmit} />
-      {thoughts.map(thought => (
-        <HappyThought key={thought._id}
-          thought={thought}
-          addLikeThought={addLikeThought} />
-      ))}
+      <div className="contentContainer">
+        <div>
+          <HappyForm onFormSubmit={handleFormSubmit} />
+        </div>
+        <div>
+          {thoughts.map(thought => (
+            <HappyThought key={thought._id}
+              thought={thought}
+              addLikeThought={addLikeThought} />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

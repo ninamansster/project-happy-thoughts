@@ -4,7 +4,7 @@ article {
   width:415px;
   border: solid 0.5px black;
   background-color: #F2F0F0;
-  margin-bottom: 30px;
+  margin: 50px 0px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.9);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.9);
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.9);
@@ -18,10 +18,11 @@ article {
   padding: 10px;
 }
 
+
 .heartButton {
   background-color:#FFADAD;
   border-radius: 50%;
-  padding:11px 13px;
+  padding:8px 10px;
   font-size: 18px;
 }
 

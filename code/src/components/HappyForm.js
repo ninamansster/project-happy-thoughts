@@ -10,10 +10,10 @@ export const HappyForm = ({ onFormSubmit }) => {
   }
   return (
     <form>
-      <h3>Post a happy thought here!</h3>
-      <p>{message}</p>
+      <h3>Post a Happy Thought here!</h3>
+      {/* <p>{message}</p> */}
       <textarea autoFocus="autoFocus" rows='3' onChange={event => setMessage(event.target.value)}></textarea>
-      <p>{message.length} / 140</p>
+      <p className="charCount">{message.length} / 140 </p>
       <button className="happyFormButton"
         type='submit'
         onClick={handleSubmit}
