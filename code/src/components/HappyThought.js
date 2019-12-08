@@ -19,12 +19,16 @@ export const HappyThought = (props) => {
     <article>
       <h1>{message}</h1>
       <div className="heartTimer">
-        <button className="heartButton"
-          type='submit'
-          onClick={handleLikeThought}>
-          <span role="img" aria-label="Heart">❤️</span>
-        </button>
-        <span> x {hearts}</span>
+        <div className="likeThought">
+          <button className="heartButton"
+            type='submit'
+            onClick={handleLikeThought}
+            style={{ background: hearts > 0 ? "#ffadad" : "#f3f1f1  " }}
+          >
+            <span className="like" role="img" aria-label="Heart">❤️</span>
+          </button>
+          <span> x {hearts}</span>
+        </div>
         <p>{moment(createdAt).fromNow()}</p>
       </div>
     </article>

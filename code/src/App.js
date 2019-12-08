@@ -22,6 +22,7 @@ export const App = () => {
       headers: { "Content-Type": "application/json" }
     })
       .then(() => setPostedMessage(message))
+
   }
 
   const addLikeThought = (likedThoughtId) => {
@@ -36,7 +37,7 @@ export const App = () => {
 
   return (
     <div>
-      <div className="contentContainer">
+      <main>
         <div>
           <HappyForm onFormSubmit={handleFormSubmit} />
         </div>
@@ -47,7 +48,7 @@ export const App = () => {
               addLikeThought={addLikeThought} />
           ))}
         </div>
-      </div>
+      </main>
     </div>
   )
 }
