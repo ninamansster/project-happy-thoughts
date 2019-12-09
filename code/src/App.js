@@ -15,13 +15,8 @@ export const App = () => {
       .then(json => setThoughts(json))
   }, [postedMessage])
 
-  const handleFormSubmit = message => {
-    fetch('https://technigo-thoughts.herokuapp.com/', {
-      method: "POST",
-      body: JSON.stringify({ message }),
-      headers: { "Content-Type": "application/json" }
-    })
-      .then(() => setPostedMessage(message))
+  const onFormSubmit = message => {
+    setPostedMessage(message)
   }
 
   const addLikeThought = (likedThoughtId) => {
@@ -32,13 +27,14 @@ export const App = () => {
       return thought
     })
     setThoughts(updatedThoughts)
+
   }
 
   return (
     <div>
       <main>
         <div>
-          <HappyForm onFormSubmit={handleFormSubmit} />
+          <HappyForm onFormSubmit={onFormSubmit} />
         </div>
         <div>
           {thoughts.map(thought => (
