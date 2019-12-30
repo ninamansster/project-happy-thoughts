@@ -2,7 +2,11 @@
 
 In this week's project, I practiced React state skills by fetching and posting data to an API. It included the useState and useEffect.
 
-We've built a simple API to collect 'happy thoughts'. Think of it as our own version of Twitter, but with less negativity, and 100% fewer US presidents using it. 
+We've built a simple API to collect 'happy thoughts'in a Twitter-like web app.
+
+You can take a look at the web page here: https://ninamansster-happy-thoughts.netlify.com/
+
+## API documentation
 
 ### Fetch recent thoughts
 
