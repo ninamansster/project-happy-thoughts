@@ -7,7 +7,7 @@ export const HappyForm = props => {
   const handleSubmit = event => {
     event.preventDefault()
 
-    fetch('http://localhost:8080/', {
+    fetch('https://happy-thoughts-ninamansster.herokuapp.com/', {
       method: "POST",
       body: JSON.stringify({ message }),
       headers: { "Content-Type": "application/json" }
