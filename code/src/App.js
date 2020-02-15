@@ -10,7 +10,7 @@ export const App = () => {
 
 
   useEffect(() => {
-    fetch("https://technigo-thoughts.herokuapp.com/")
+    fetch("http://localhost:8080/")
       .then(res => res.json())
       .then(json => setThoughts(json))
   }, [postedMessage])
